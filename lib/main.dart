@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'home_page.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:ukk_2025/home_page.dart';
 
 Future <void> main() async {
   await Supabase.initialize(
@@ -17,13 +16,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: HomePage(),
       // home: pelangganid(),
     );
   }
 }
 
-class LoginPage extends StatefulWidget {
+class LoginPage extends StatefulWidget { 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
         );
         Navigator.pushReplacement(
           context, 
-          MaterialPageRoute(builder: (context) => HomePage()),
+          MaterialPageRoute(builder: (context) => LoginPage()),
           );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kasir_coba/main.dart';
-import 'package:kasir_coba/pelanggan/indexpelanggan.dart';
-import 'package:kasir_coba/penjualan/indexpenjualan.dart';
-import 'package:kasir_coba/produk/indexproduk.dart';
+import 'package:ukk_2025/main.dart';
+import 'package:ukk_2025/pelanggan/indexpelanggan.dart';
 
 class HomePage extends StatelessWidget {
   // Membuat GlobalKey untuk Scaffold
@@ -46,7 +44,7 @@ class HomePage extends StatelessWidget {
                 leading: Icon(Icons.exit_to_app),
                 title: Text('Keluar'),
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage())); // Menutup drawer
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage())); // Menutup drawer
                 },
               ),
             ],
@@ -75,8 +73,6 @@ class HomePage extends StatelessWidget {
         body: TabBarView(
           children: [
             PelangganTab(),
-            PenjualanTab(),
-            ProdukTab(),
             Center(child: Text('sooyy')),
 
           ],
