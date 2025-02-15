@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
 
 class LoginPage extends StatefulWidget { 
   @override
-  Widget build(BuildContext context) {
+  Widget buid (BuildContext context) {
     return Scaffold(
       appBar: AppBar(actions: [],),
     );
