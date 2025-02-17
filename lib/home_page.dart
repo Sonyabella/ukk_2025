@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ukk_2025/main.dart';
 import 'package:ukk_2025/pelanggan/indexpelanggan.dart';
+import 'package:ukk_2025/penjualan/indexpenjualan.dart';
 
 class HomePage extends StatelessWidget {
   // Membuat GlobalKey untuk Scaffold
@@ -73,6 +74,7 @@ class HomePage extends StatelessWidget {
         body: TabBarView(
           children: [
             PelangganTab(),
+            PenjualanTab(),
             Center(child: Text('sooyy')),
 
           ],
